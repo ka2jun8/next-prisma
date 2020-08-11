@@ -1,0 +1,27 @@
+{
+  "documents": [
+    {
+      "fileName": "/Users/junya/Programs/ka2jun8/next-prisma/pages/index.tsx",
+      "type": "query",
+      "operationName": "ViewerQuery",
+      "body": "query ViewerQuery {\n  viewer {\n    id\n    name\n    status\n  }\n}\n",
+      "tag": "gql",
+      "templateLiteralNodeStart": {
+        "line": 6,
+        "character": 23
+      },
+      "templateLiteralNodeEnd": {
+        "line": 14,
+        "character": 1
+      },
+      "documentStart": {
+        "line": 6,
+        "character": 24
+      },
+      "documentEnd": {
+        "line": 14,
+        "character": 0
+      }
+    }
+  ]
+}

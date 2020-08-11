@@ -1,0 +1,27 @@
+{
+  "processors": ["stylelint-processor-styled-components"],
+  "extends": [
+    "stylelint-config-standard",
+    "stylelint-config-styled-components",
+    "stylelint-config-rational-order",
+    "stylelint-config-prettier",
+  ],
+  "rules": {
+    "selector-type-no-unknown": [true, {
+      "ignoreTypes": ["amp-carousel", "amp-accordion", "amp-img", "amp-autocomplete"]
+    }],
+    "value-no-vendor-prefix": [true, {
+      "ignoreValues": ["box"]
+    }],
+    "property-no-vendor-prefix": [true , {
+      "ignoreProperties": ["box-orient"]
+    }],
+    "order/properties-order": [],
+    "plugin/rational-order": true,
+    "declaration-property-unit-whitelist": {
+      "font-size": ["rem"],
+      "line-height": []
+    },
+    "value-keyword-case": ["lower", { "ignoreKeywords": ["dummyValue"] }]
+  }
+}
