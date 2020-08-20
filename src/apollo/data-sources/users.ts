@@ -31,7 +31,6 @@ export default class UserAPI extends DataSource {
         email,
       },
     });
-    console.log({ create: result });
     return result;
   }
 }

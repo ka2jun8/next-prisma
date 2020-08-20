@@ -10,11 +10,9 @@ export const resolvers = {
   },
   Mutation: {
     create: async (_, { name, email }, { dataSources }) => {
-      console.log("Mutation", { dataSources });
-      const results = await dataSources.users.create({ name, email });
-
+      const result = await dataSources.users.create({ name, email });
       return {
-        success: results && results.length > 0,
+        success: !!result,
       };
     },
   },

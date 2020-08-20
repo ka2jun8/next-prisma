@@ -36,6 +36,11 @@ const Index = () => {
           </Link>
           page.
         </div>
+        <div>
+          <Link href="/login">
+            <a>ユーザー登録/ログイン</a>
+          </Link>
+        </div>
       </main>
     </div>
   );
